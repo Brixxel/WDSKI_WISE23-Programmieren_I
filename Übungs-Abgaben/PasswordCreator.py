@@ -110,7 +110,6 @@ def output(passwords: list, type: int):
         command = 'echo ' + str(passwords).strip() + '| clip'           # speichert dei Passwörter in die Zwischenablage
         os.system(command)
 
-
 # #######################
 # start programm_sequence
 programm()

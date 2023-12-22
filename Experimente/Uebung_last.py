@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 
 # %%
 
-
 m = np.ones((2,5))
 v = np.asarray([1,2,3,4,5])
 
@@ -45,5 +44,14 @@ y = np .sin( x )
 
 plt . plot (x , y )
 plt . show ()
+
+# %%
+
+b = "Zerlege mich in kleinbuchstaben Woerter"
+b = b.lower().split(" ")
+print(b)
+
+a = "hello"
+a[1] = "q"
 
 # %%
