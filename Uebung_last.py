@@ -30,6 +30,8 @@ plt.imshow(r)
 # plt.imshow(y)
 
 x = np.ones((8,8))
+print(x)
+print(type(x))
 x[0:8:2,0:8:2] = 0
 x[1:8:2,1:8:2] = 0
 x = np.pad(x,1,constant_values= 2)
