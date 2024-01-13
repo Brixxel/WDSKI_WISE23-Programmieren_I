@@ -57,3 +57,41 @@ a = "hello"
 a[1] = "q"
 
 # %%
+print([x for x in range(3)])
+# %%
+
+Integer = list(range(20))
+Integer = [x+1 for x  in Integer]
+print(Integer)
+
+Sort_Integer = [x for x in Integer if x% 2 == 1] + [j for j in Integer if j % 2 == 0]
+#Sort_Integer.extend([j for j in Integer if j % 2 == 0])
+print(Sort_Integer)
+
+# %%
+Fiver_Integers = [x for x in range(5, 101, 10)]
+print(Fiver_Integers)
+
+# %%
+import random
+
+Random_Integers = [random.randint(-100, 100) for x in range(1000)]
+print(Random_Integers)
+if 0 in Random_Integers:
+    print(Random_Integers.index(0))
+
+# %%
+
+class Dog:
+    def __init__(self) -> None:
+        pass
+    
+    def __init__(self, alter: int):
+        self.alter = alter
+        
+
+dogo1 = Dog()
+dogo2 = Dog(13)
+    
+
+# %%
